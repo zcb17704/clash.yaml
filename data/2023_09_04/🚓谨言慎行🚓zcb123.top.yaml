@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2023-09-06 17:07:50
+# 创建时间：2023-09-06 17:31:28
 # 使用模版：ACL4SSR_WithChinaIp_WithGFW.ini
-# 节点数量：11
+# 节点数量：13
 # 节点类型：vless
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
@@ -96,11 +96,7 @@ proxies:
       "tls": true,
       "servername": "www.zcb123.top",
       "network": "ws",
-      "ws-opts":
-        {
-          "path": "/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9",
-          "headers": { "host": "www.zcb123.top" },
-        },
+      "ws-opts": { "path": "/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9" },
     }
   - {
       "name": "优选旧金山高速低延时_1",
@@ -111,11 +107,7 @@ proxies:
       "tls": true,
       "servername": "www.zcb123.top",
       "network": "ws",
-      "ws-opts":
-        {
-          "path": "/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9",
-          "headers": { "host": "www.zcb123.top" },
-        },
+      "ws-opts": { "path": "/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9" },
     }
   - {
       "name": "优选旧金山高速低延时_2",
@@ -126,11 +118,7 @@ proxies:
       "tls": true,
       "servername": "www.zcb123.top",
       "network": "ws",
-      "ws-opts":
-        {
-          "path": "/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9",
-          "headers": { "host": "www.zcb123.top" },
-        },
+      "ws-opts": { "path": "/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9" },
     }
   - {
       "name": "优选旧金山高速低延时_3",
@@ -141,11 +129,7 @@ proxies:
       "tls": true,
       "servername": "www.zcb123.top",
       "network": "ws",
-      "ws-opts":
-        {
-          "path": "/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9",
-          "headers": { "host": "www.zcb123.top" },
-        },
+      "ws-opts": { "path": "/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9" },
     }
   - {
       "name": "优选旧金山高速低延时_4",
@@ -156,11 +140,7 @@ proxies:
       "tls": true,
       "servername": "www.zcb123.top",
       "network": "ws",
-      "ws-opts":
-        {
-          "path": "/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9",
-          "headers": { "host": "www.zcb123.top" },
-        },
+      "ws-opts": { "path": "/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9" },
     }
   - {
       "name": "优选旧金山高速低延时_5",
@@ -171,11 +151,7 @@ proxies:
       "tls": true,
       "servername": "www.zcb123.top",
       "network": "ws",
-      "ws-opts":
-        {
-          "path": "/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9",
-          "headers": { "host": "www.zcb123.top" },
-        },
+      "ws-opts": { "path": "/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9" },
     }
   - {
       "name": "优选旧金山_1",
@@ -186,11 +162,7 @@ proxies:
       "tls": true,
       "servername": "www.zcb123.top",
       "network": "ws",
-      "ws-opts":
-        {
-          "path": "/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9",
-          "headers": { "host": "www.zcb123.top" },
-        },
+      "ws-opts": { "path": "/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9" },
     }
   - {
       "name": "优选旧金山_2",
@@ -201,11 +173,7 @@ proxies:
       "tls": true,
       "servername": "www.zcb123.top",
       "network": "ws",
-      "ws-opts":
-        {
-          "path": "/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9",
-          "headers": { "host": "www.zcb123.top" },
-        },
+      "ws-opts": { "path": "/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9" },
     }
   - {
       "name": "优选安徽移动==>旧金山",
@@ -216,11 +184,7 @@ proxies:
       "tls": true,
       "servername": "www.zcb123.top",
       "network": "ws",
-      "ws-opts":
-        {
-          "path": "/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9",
-          "headers": { "host": "www.zcb123.top" },
-        },
+      "ws-opts": { "path": "/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9" },
     }
   - {
       "name": "优选安徽电信==>旧金山",
@@ -231,11 +195,7 @@ proxies:
       "tls": true,
       "servername": "www.zcb123.top",
       "network": "ws",
-      "ws-opts":
-        {
-          "path": "/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9",
-          "headers": { "host": "www.zcb123.top" },
-        },
+      "ws-opts": { "path": "/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9" },
     }
   - {
       "name": "优选直连==>加拿大",
@@ -246,11 +206,29 @@ proxies:
       "tls": true,
       "servername": "www.zcb123.top",
       "network": "ws",
-      "ws-opts":
-        {
-          "path": "/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9",
-          "headers": { "host": "www.zcb123.top" },
-        },
+      "ws-opts": { "path": "/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9" },
+    }
+  - {
+      "name": "优选香港移动-1",
+      "type": "vless",
+      "server": "141.101.115.89",
+      "port": 443,
+      "uuid": "7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9",
+      "tls": true,
+      "servername": "www.zcb123.top",
+      "network": "ws",
+      "ws-opts": { "path": "/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9" },
+    }
+  - {
+      "name": "优选香港移动-2",
+      "type": "vless",
+      "server": "141.101.115.43",
+      "port": 443,
+      "uuid": "7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9",
+      "tls": true,
+      "servername": "www.zcb123.top",
+      "network": "ws",
+      "ws-opts": { "path": "/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9" },
     }
 proxy-groups:
   - name: 🚀 节点选择
@@ -269,6 +247,8 @@ proxy-groups:
       - 优选安徽移动==>旧金山
       - 优选安徽电信==>旧金山
       - 优选直连==>加拿大
+      - 优选香港移动-1
+      - 优选香港移动-2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -286,6 +266,8 @@ proxy-groups:
       - 优选安徽移动==>旧金山
       - 优选安徽电信==>旧金山
       - 优选直连==>加拿大
+      - 优选香港移动-1
+      - 优选香港移动-2
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -303,6 +285,8 @@ proxy-groups:
       - 优选安徽移动==>旧金山
       - 优选安徽电信==>旧金山
       - 优选直连==>加拿大
+      - 优选香港移动-1
+      - 优选香港移动-2
   - name: 📲 电报信息
     type: select
     proxies:
@@ -319,6 +303,8 @@ proxy-groups:
       - 优选安徽移动==>旧金山
       - 优选安徽电信==>旧金山
       - 优选直连==>加拿大
+      - 优选香港移动-1
+      - 优选香港移动-2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -335,6 +321,8 @@ proxy-groups:
       - 优选安徽移动==>旧金山
       - 优选安徽电信==>旧金山
       - 优选直连==>加拿大
+      - 优选香港移动-1
+      - 优选香港移动-2
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -351,6 +339,8 @@ proxy-groups:
       - 优选安徽移动==>旧金山
       - 优选安徽电信==>旧金山
       - 优选直连==>加拿大
+      - 优选香港移动-1
+      - 优选香港移动-2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -384,6 +374,8 @@ proxy-groups:
       - 优选安徽移动==>旧金山
       - 优选安徽电信==>旧金山
       - 优选直连==>加拿大
+      - 优选香港移动-1
+      - 优选香港移动-2
 
 rules:
   # 本地/局域网地址
