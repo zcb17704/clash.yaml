@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2023-09-11 17:10:50
+# 创建时间：2023-09-13 10:56:18
 # 使用模版：ACL4SSR_WithChinaIp_WithGFW.ini
-# 节点数量：9
+# 节点数量：8
 # 节点类型：vless
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
@@ -207,21 +207,6 @@ proxies:
           "headers": { "host": "www.zcb123.top" },
         },
     }
-  - {
-      "name": "优选加利福尼亚",
-      "type": "vless",
-      "server": "172.67.134.131",
-      "port": 443,
-      "uuid": "7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9",
-      "tls": true,
-      "servername": "www.zcb123.top",
-      "network": "ws",
-      "ws-opts":
-        {
-          "path": "/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9",
-          "headers": { "host": "www.zcb123.top" },
-        },
-    }
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -236,7 +221,6 @@ proxy-groups:
       - 优选电信==>圣何塞
       - 优选旧金山高速低延时-2
       - 优选新加坡节点
-      - 优选加利福尼亚
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -251,7 +235,6 @@ proxy-groups:
       - 优选电信==>圣何塞
       - 优选旧金山高速低延时-2
       - 优选新加坡节点
-      - 优选加利福尼亚
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -266,7 +249,6 @@ proxy-groups:
       - 优选电信==>圣何塞
       - 优选旧金山高速低延时-2
       - 优选新加坡节点
-      - 优选加利福尼亚
   - name: 📲 电报信息
     type: select
     proxies:
@@ -280,7 +262,6 @@ proxy-groups:
       - 优选电信==>圣何塞
       - 优选旧金山高速低延时-2
       - 优选新加坡节点
-      - 优选加利福尼亚
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -294,7 +275,6 @@ proxy-groups:
       - 优选电信==>圣何塞
       - 优选旧金山高速低延时-2
       - 优选新加坡节点
-      - 优选加利福尼亚
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -308,7 +288,6 @@ proxy-groups:
       - 优选电信==>圣何塞
       - 优选旧金山高速低延时-2
       - 优选新加坡节点
-      - 优选加利福尼亚
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -339,7 +318,6 @@ proxy-groups:
       - 优选电信==>圣何塞
       - 优选旧金山高速低延时-2
       - 优选新加坡节点
-      - 优选加利福尼亚
 
 rules:
   # 本地/局域网地址
