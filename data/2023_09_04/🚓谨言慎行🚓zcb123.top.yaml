@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2023-09-13 17:25:36
+# 创建时间：2023-09-14 10:31:06
 # 使用模版：ACL4SSR_WithChinaIp_WithGFW.ini
-# 节点数量：9
+# 节点数量：10
 # 节点类型：vless
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
@@ -222,6 +222,21 @@ proxies:
           "headers": { "host": "www.460287zuo.top" },
         },
     }
+  - {
+      "name": "优化香港节点cdn中转",
+      "type": "vless",
+      "server": "141.101.115.49",
+      "port": 443,
+      "uuid": "c86f7cbe-4aa7-4393-809e-12a5e6f5cf2b",
+      "tls": true,
+      "servername": "www.460287zuo.top",
+      "network": "ws",
+      "ws-opts":
+        {
+          "path": "/c86f7cbe-4aa7-4393-809e-12a5e6f5cf2b",
+          "headers": { "host": "www.460287zuo.top" },
+        },
+    }
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -237,6 +252,7 @@ proxy-groups:
       - 优选旧金山高速低延时-2
       - 优选新加坡节点
       - 直连香港节点无中转
+      - 优化香港节点cdn中转
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -252,6 +268,7 @@ proxy-groups:
       - 优选旧金山高速低延时-2
       - 优选新加坡节点
       - 直连香港节点无中转
+      - 优化香港节点cdn中转
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -267,6 +284,7 @@ proxy-groups:
       - 优选旧金山高速低延时-2
       - 优选新加坡节点
       - 直连香港节点无中转
+      - 优化香港节点cdn中转
   - name: 📲 电报信息
     type: select
     proxies:
@@ -281,6 +299,7 @@ proxy-groups:
       - 优选旧金山高速低延时-2
       - 优选新加坡节点
       - 直连香港节点无中转
+      - 优化香港节点cdn中转
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -295,6 +314,7 @@ proxy-groups:
       - 优选旧金山高速低延时-2
       - 优选新加坡节点
       - 直连香港节点无中转
+      - 优化香港节点cdn中转
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -309,6 +329,7 @@ proxy-groups:
       - 优选旧金山高速低延时-2
       - 优选新加坡节点
       - 直连香港节点无中转
+      - 优化香港节点cdn中转
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -340,6 +361,7 @@ proxy-groups:
       - 优选旧金山高速低延时-2
       - 优选新加坡节点
       - 直连香港节点无中转
+      - 优化香港节点cdn中转
 
 rules:
   # 本地/局域网地址
