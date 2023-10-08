@@ -706,6 +706,7 @@ rules:
   - IP-CIDR,220.181.174.34/32,🚓谨言慎行🚓zcb123.top,no-resolve
   - DOMAIN,injections.adguard.org,DIRECT
   - DOMAIN,local.adguard.org,DIRECT
+  - DOMAIN,www.cfznpan.com,DIRECT
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,127.0.0.0/8,DIRECT
   - IP-CIDR,172.16.0.0/12,DIRECT
