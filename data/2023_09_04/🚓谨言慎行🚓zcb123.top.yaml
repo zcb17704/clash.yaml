@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2023-10-08 11:17:29
+# 创建时间：2023-10-09 11:34:29
 # 使用模版：12123
 # 节点数量：8
 # 节点类型：vless
@@ -17,7 +17,6 @@ dns:
   enable: true
   ipv6: false
   default-nameserver:
-    - 192.168.1.1
     - 223.5.5.5
     - 119.29.29.29
   enhanced-mode: fake-ip
@@ -706,7 +705,6 @@ rules:
   - IP-CIDR,220.181.174.34/32,🚓谨言慎行🚓zcb123.top,no-resolve
   - DOMAIN,injections.adguard.org,DIRECT
   - DOMAIN,local.adguard.org,DIRECT
-  - DOMAIN,www.cfznpan.com,DIRECT
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,127.0.0.0/8,DIRECT
   - IP-CIDR,172.16.0.0/12,DIRECT
