@@ -53,6 +53,23 @@ proxies:
         },
     }
   - {
+      "name": "真实香港节点",
+      "type": "vmess",
+      "server": "92.223.120.10",
+      "port": 443,
+      "cipher": "auto",
+      "uuid": "d77d74f1-afe1-4f68-abc0-828cd2e08156",
+      "alterId": 0,
+      "tls": true,
+      "skip-cert-verify": true,
+      "network": "ws",
+      "ws-opts":
+        {
+          "path": "/d77d74f1-afe1-4f68-abc0-828cd2e08156",
+          "headers": { "host": "www.460287zuo.top" },
+        },
+    }
+  - {
       "name": "优选旧金山高速低延时-1",
       "type": "vless",
       "server": "172.67.6.96",
