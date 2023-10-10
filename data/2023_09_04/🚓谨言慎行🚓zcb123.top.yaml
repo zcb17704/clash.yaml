@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2023-10-09 11:48:47
+# 创建时间：2023-10-10 09:40:25
 # 使用模版：12123
-# 节点数量：8
+# 节点数量：9
 # 节点类型：vless
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
@@ -157,6 +157,21 @@ proxies:
           "headers": { "host": "www.zcb123.top" },
         },
     }
+  - {
+      "name": "真实香港节点直连",
+      "type": "vless",
+      "server": "www.460287zuo.top",
+      "port": 443,
+      "uuid": "97c6ebef-fb3e-4f4e-9d7e-2ecd01d587ca",
+      "tls": true,
+      "servername": "www.460287zuo.top",
+      "network": "ws",
+      "ws-opts":
+        {
+          "path": "/97c6ebef-fb3e-4f4e-9d7e-2ecd01d587ca",
+          "headers": { "host": "www.460287zuo.top" },
+        },
+    }
 proxy-groups:
   - name: 🚓谨言慎行🚓zcb123.top
     type: select
@@ -171,6 +186,7 @@ proxy-groups:
       - 优选电信==>圣何塞
       - 优选旧金山高速低延时-2
       - 优选新加坡节点
+      - 真实香港节点直连
   - name: 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -184,6 +200,7 @@ proxy-groups:
       - 优选电信==>圣何塞
       - 优选旧金山高速低延时-2
       - 优选新加坡节点
+      - 真实香港节点直连
   - name: 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -197,6 +214,7 @@ proxy-groups:
       - 优选电信==>圣何塞
       - 优选旧金山高速低延时-2
       - 优选新加坡节点
+      - 真实香港节点直连
 
 rules:
   - DOMAIN,guolicheng.cfd,DIRECT
