@@ -52,19 +52,6 @@ proxies:
           "headers": { "host": "www.zcb123.top" },
         },
     }
-    {
-      "server": "www.460287zuo.top:443",
-      "obfs": "fuck me till the daylight",
-      "up_mbps": 300,
-      "down_mbps": 1000,
-      "auth": 123456,
-      "socks5": {
-        "listen": "127.0.0.1:1080"
-      },
-      "http": {
-        "listen": "127.0.0.1:7890"
-  }
-}
   - {
       "name": "真实香港节点",
       "type": "vmess",
