@@ -1,15 +1,15 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2023-10-12 11:52:07
-# 使用模版：12123
-# 节点数量：9
+# 创建时间：2023-10-17 09:07:54
+# 使用模版：123456
+# 节点数量：4
 # 节点类型：vless
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
 mixed-port: 7890
 allow-lan: true
-bind-address: '*'
+bind-address: "*"
 mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
@@ -37,15 +37,66 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"原生洛杉矶","type":"vless","server":"www.zcb123.top","port":443,"uuid":"7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9","tls":true,"servername":"www.zcb123.top","network":"ws","ws-opts":{"path":"/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9","headers":{"host":"www.zcb123.top"}}}
-  - {"name":"优选旧金山高速低延时-1","type":"vless","server":"172.67.6.96","port":443,"uuid":"7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9","tls":true,"servername":"www.zcb123.top","network":"ws","ws-opts":{"path":"/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9","headers":{"host":"www.zcb123.top"}}}
-  - {"name":"优选香港移动出海-1","type":"vless","server":"162.159.152.99","port":443,"uuid":"7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9","tls":true,"servername":"www.zcb123.top","network":"ws","ws-opts":{"path":"/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9","headers":{"host":"www.zcb123.top"}}}
-  - {"name":"优选香港移动出海-2","type":"vless","server":"141.101.115.49","port":443,"uuid":"7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9","tls":true,"servername":"www.zcb123.top","network":"ws","ws-opts":{"path":"/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9","headers":{"host":"www.zcb123.top"}}}
-  - {"name":"优选香港移动出海-3","type":"vless","server":"141.101.115.46","port":443,"uuid":"7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9","tls":true,"servername":"www.zcb123.top","network":"ws","ws-opts":{"path":"/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9","headers":{"host":"www.zcb123.top"}}}
-  - {"name":"优选电信==>圣何塞","type":"vless","server":"104.16.160.49","port":443,"uuid":"7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9","tls":true,"servername":"www.zcb123.top","network":"ws","ws-opts":{"path":"/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9","headers":{"host":"www.zcb123.top"}}}
-  - {"name":"优选旧金山高速低延时-2","type":"vless","server":"162.159.130.170","port":443,"uuid":"7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9","tls":true,"servername":"www.zcb123.top","network":"ws","ws-opts":{"path":"/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9","headers":{"host":"www.zcb123.top"}}}
-  - {"name":"优选新加坡节点","type":"vless","server":"104.18.63.233","port":443,"uuid":"7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9","tls":true,"servername":"www.zcb123.top","network":"ws","ws-opts":{"path":"/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9","headers":{"host":"www.zcb123.top"}}}
-  - {"name":"真实香港节点直连","type":"vless","server":"www.460287zuo.top","port":443,"uuid":"2cb95f1c-de3c-48f6-a214-2e1bca446a51","tls":true,"servername":"www.460287zuo.top","network":"ws","ws-opts":{"path":"/2cb95f1c-de3c-48f6-a214-2e1bca446a51","headers":{"host":"www.460287zuo.top"}}}
+  - {
+      "name": "原生洛杉矶",
+      "type": "vless",
+      "server": "www.zcb123.top",
+      "port": 443,
+      "uuid": "7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9",
+      "tls": true,
+      "servername": "www.zcb123.top",
+      "network": "ws",
+      "ws-opts":
+        {
+          "path": "/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9",
+          "headers": { "host": "www.zcb123.top" },
+        },
+    }
+  - {
+      "name": "优选加速(推荐)-1",
+      "type": "vless",
+      "server": "104.17.197.236",
+      "port": 443,
+      "uuid": "7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9",
+      "tls": true,
+      "servername": "www.zcb123.top",
+      "network": "ws",
+      "ws-opts":
+        {
+          "path": "/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9",
+          "headers": { "host": "www.zcb123.top" },
+        },
+    }
+  - {
+      "name": "优选加速-2",
+      "type": "vless",
+      "server": "104.29.59.135",
+      "port": 443,
+      "uuid": "7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9",
+      "tls": true,
+      "servername": "www.zcb123.top",
+      "network": "ws",
+      "ws-opts":
+        {
+          "path": "/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9",
+          "headers": { "host": "www.zcb123.top" },
+        },
+    }
+  - {
+      "name": "优选加速-3",
+      "type": "vless",
+      "server": "104.29.68.69",
+      "port": 443,
+      "uuid": "7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9",
+      "tls": true,
+      "servername": "www.zcb123.top",
+      "network": "ws",
+      "ws-opts":
+        {
+          "path": "/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9",
+          "headers": { "host": "www.zcb123.top" },
+        },
+    }
 proxy-groups:
   - name: 🚓谨言慎行🚓zcb123.top
     type: select
@@ -53,46 +104,30 @@ proxy-groups:
       - 自动选择
       - 故障转移
       - 原生洛杉矶
-      - 优选旧金山高速低延时-1
-      - 优选香港移动出海-1
-      - 优选香港移动出海-2
-      - 优选香港移动出海-3
-      - 优选电信==>圣何塞
-      - 优选旧金山高速低延时-2
-      - 优选新加坡节点
-      - 真实香港节点直连
+      - 优选加速(推荐)-1
+      - 优选加速-2
+      - 优选加速-3
   - name: 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 86400
     proxies:
       - 原生洛杉矶
-      - 优选旧金山高速低延时-1
-      - 优选香港移动出海-1
-      - 优选香港移动出海-2
-      - 优选香港移动出海-3
-      - 优选电信==>圣何塞
-      - 优选旧金山高速低延时-2
-      - 优选新加坡节点
-      - 真实香港节点直连
+      - 优选加速(推荐)-1
+      - 优选加速-2
+      - 优选加速-3
   - name: 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 7200
     proxies:
       - 原生洛杉矶
-      - 优选旧金山高速低延时-1
-      - 优选香港移动出海-1
-      - 优选香港移动出海-2
-      - 优选香港移动出海-3
-      - 优选电信==>圣何塞
-      - 优选旧金山高速低延时-2
-      - 优选新加坡节点
-      - 真实香港节点直连
+      - 优选加速(推荐)-1
+      - 优选加速-2
+      - 优选加速-3
 
 rules:
   - DOMAIN,guolicheng.cfd,DIRECT
-# 长风网站，自动注入
   - DOMAIN-SUFFIX,v2rayse.com,🚓谨言慎行🚓zcb123.top
   - DOMAIN-SUFFIX,cff.pw,🚓谨言慎行🚓zcb123.top
   - DOMAIN-SUFFIX,vpnse.org,🚓谨言慎行🚓zcb123.top
