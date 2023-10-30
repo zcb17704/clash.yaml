@@ -1,15 +1,15 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2023-10-27 17:26:18
+# 创建时间：2023-10-30 10:39:48
 # 使用模版：12123
-# 节点数量：4
-# 节点类型：vless
+# 节点数量：6
+# 节点类型：vmess, vless
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
 mixed-port: 7890
 allow-lan: true
-bind-address: '*'
+bind-address: "*"
 mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
@@ -37,42 +37,131 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"原生洛杉矶","type":"vless","server":"www.zcb123.top","port":443,"uuid":"7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9","tls":true,"servername":"www.zcb123.top","network":"ws","ws-opts":{"path":"/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9","headers":{"host":"www.zcb123.top"}}}
-  - {"name":"优选加速(推荐)-1","type":"vless","server":"104.17.197.236","port":443,"uuid":"7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9","tls":true,"servername":"www.zcb123.top","network":"ws","ws-opts":{"path":"/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9","headers":{"host":"www.zcb123.top"}}}
-  - {"name":"优选加速-2","type":"vless","server":"104.18.66.122","port":443,"uuid":"7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9","tls":true,"servername":"www.zcb123.top","network":"ws","ws-opts":{"path":"/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9","headers":{"host":"www.zcb123.top"}}}
-  - {"name":"优选加速(推荐)-3","type":"vless","server":"104.19.19.19","port":443,"uuid":"7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9","tls":true,"servername":"www.zcb123.top","network":"ws","ws-opts":{"path":"/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9","headers":{"host":"www.zcb123.top"}}}
+  - {
+      "name": "原生香港-wechat-video混淆",
+      "type": "vmess",
+      "server": "203.147.228.15",
+      "port": 9008,
+      "cipher": "auto",
+      "uuid": "666f1d0f-244d-4bc0-9bb1-9c0eb9052dc6",
+      "alterId": 0,
+      "tls": false,
+      "skip-cert-verify": true,
+      "network": "quic",
+    }
+  - {
+      "name": "原生洛杉矶",
+      "type": "vless",
+      "server": "www.zcb123.top",
+      "port": 443,
+      "uuid": "7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9",
+      "tls": true,
+      "servername": "www.zcb123.top",
+      "network": "ws",
+      "ws-opts":
+        {
+          "path": "/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9",
+          "headers": { "host": "www.zcb123.top" },
+        },
+    }
+  - {
+      "name": "优选加速(推荐)-1",
+      "type": "vless",
+      "server": "104.17.197.236",
+      "port": 443,
+      "uuid": "7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9",
+      "tls": true,
+      "servername": "www.zcb123.top",
+      "network": "ws",
+      "ws-opts":
+        {
+          "path": "/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9",
+          "headers": { "host": "www.zcb123.top" },
+        },
+    }
+  - {
+      "name": "优选加速-2",
+      "type": "vless",
+      "server": "104.18.66.122",
+      "port": 443,
+      "uuid": "7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9",
+      "tls": true,
+      "servername": "www.zcb123.top",
+      "network": "ws",
+      "ws-opts":
+        {
+          "path": "/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9",
+          "headers": { "host": "www.zcb123.top" },
+        },
+    }
+  - {
+      "name": "优选加速(推荐)-3",
+      "type": "vless",
+      "server": "172.67.4.155",
+      "port": 443,
+      "uuid": "7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9",
+      "tls": true,
+      "servername": "www.zcb123.top",
+      "network": "ws",
+      "ws-opts":
+        {
+          "path": "/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9",
+          "headers": { "host": "www.zcb123.top" },
+        },
+    }
+  - {
+      "name": "优选加速(推荐)-4",
+      "type": "vless",
+      "server": "104.19.208.200",
+      "port": 443,
+      "uuid": "7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9",
+      "tls": true,
+      "servername": "www.zcb123.top",
+      "network": "ws",
+      "ws-opts":
+        {
+          "path": "/7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9",
+          "headers": { "host": "www.zcb123.top" },
+        },
+    }
 proxy-groups:
   - name: 🚓谨言慎行🚓zcb123.top
     type: select
     proxies:
       - 自动选择
       - 故障转移
+      - 原生香港-wechat-video混淆
       - 原生洛杉矶
       - 优选加速(推荐)-1
       - 优选加速-2
       - 优选加速(推荐)-3
+      - 优选加速(推荐)-4
   - name: 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 86400
     proxies:
+      - 原生香港-wechat-video混淆
       - 原生洛杉矶
       - 优选加速(推荐)-1
       - 优选加速-2
       - 优选加速(推荐)-3
+      - 优选加速(推荐)-4
   - name: 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 7200
     proxies:
+      - 原生香港-wechat-video混淆
       - 原生洛杉矶
       - 优选加速(推荐)-1
       - 优选加速-2
       - 优选加速(推荐)-3
+      - 优选加速(推荐)-4
 
 rules:
   - DOMAIN,guolicheng.cfd,DIRECT
-# 长风网站，自动注入
+  # 长风网站，自动注入
   - DOMAIN-SUFFIX,v2rayse.com,🚓谨言慎行🚓zcb123.top
   - DOMAIN-SUFFIX,cff.pw,🚓谨言慎行🚓zcb123.top
   - DOMAIN-SUFFIX,vpnse.org,🚓谨言慎行🚓zcb123.top
