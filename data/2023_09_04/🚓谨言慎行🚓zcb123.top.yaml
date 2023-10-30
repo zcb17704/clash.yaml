@@ -1,10 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2023-10-30 10:39:48
+# 创建时间：2023-10-30 10:43:58
 # 使用模版：12123
 # 节点数量：6
-# 节点类型：vmess, vless
+# 节点类型：vless
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
 mixed-port: 7890
@@ -39,15 +39,18 @@ dns:
 proxies:
   - {
       "name": "原生香港-wechat-video混淆",
-      "type": "vmess",
+      "type": "vless",
       "server": "203.147.228.15",
       "port": 9008,
-      "cipher": "auto",
-      "uuid": "666f1d0f-244d-4bc0-9bb1-9c0eb9052dc6",
-      "alterId": 0,
-      "tls": false,
-      "skip-cert-verify": true,
-      "network": "quic",
+      "udp": true,
+      "uuid": "909479c2-e31e-4ca1-8467-a9a0ccc0f2d5",
+      "tls": true,
+      "servername": "www.amazon.com",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "reality-opts":
+        { "public-key": "gHpe2YJpB1YbE0ZTvUoEhfm7sp-QFz3kiS3b46xqZCM" },
+      "client-fingerprint": "ios",
     }
   - {
       "name": "原生洛杉矶",
