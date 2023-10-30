@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2023-10-30 10:43:58
+# 创建时间：2023-10-30 10:45:25
 # 使用模版：12123
-# 节点数量：6
+# 节点数量：5
 # 节点类型：vless
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
@@ -37,21 +37,6 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {
-      "name": "原生香港-wechat-video混淆",
-      "type": "vless",
-      "server": "203.147.228.15",
-      "port": 9008,
-      "udp": true,
-      "uuid": "909479c2-e31e-4ca1-8467-a9a0ccc0f2d5",
-      "tls": true,
-      "servername": "www.amazon.com",
-      "flow": "xtls-rprx-vision",
-      "network": "tcp",
-      "reality-opts":
-        { "public-key": "gHpe2YJpB1YbE0ZTvUoEhfm7sp-QFz3kiS3b46xqZCM" },
-      "client-fingerprint": "ios",
-    }
   - {
       "name": "原生洛杉矶",
       "type": "vless",
@@ -133,7 +118,6 @@ proxy-groups:
     proxies:
       - 自动选择
       - 故障转移
-      - 原生香港-wechat-video混淆
       - 原生洛杉矶
       - 优选加速(推荐)-1
       - 优选加速-2
@@ -144,7 +128,6 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 86400
     proxies:
-      - 原生香港-wechat-video混淆
       - 原生洛杉矶
       - 优选加速(推荐)-1
       - 优选加速-2
@@ -155,7 +138,6 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 7200
     proxies:
-      - 原生香港-wechat-video混淆
       - 原生洛杉矶
       - 优选加速(推荐)-1
       - 优选加速-2
