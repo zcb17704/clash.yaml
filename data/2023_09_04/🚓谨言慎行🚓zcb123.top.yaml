@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2023-11-29 15:06:48
+# 创建时间：2023-11-29 15:20:30
 # 使用模版：ACL4SSR_Online.ini
 # 节点数量：3
 # 节点类型：vless
@@ -90,7 +90,7 @@ proxies:
   - {
       "name": "优选加速-1",
       "type": "vless",
-      "server": "190.93.246.74",
+      "server": "104.24.169.60",
       "port": 443,
       "uuid": "7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9",
       "tls": true,
@@ -105,7 +105,7 @@ proxies:
   - {
       "name": "优选加速-2",
       "type": "vless",
-      "server": "172.67.7.82",
+      "server": "172.67.163.224",
       "port": 443,
       "uuid": "7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9",
       "tls": true,
@@ -120,7 +120,7 @@ proxies:
   - {
       "name": "优选加速-3",
       "type": "vless",
-      "server": "104.18.155.36",
+      "server": "104.24.172.211",
       "port": 443,
       "uuid": "7e3e7bb9-b5ca-4bb5-83b1-e4b6687e14a9",
       "tls": true,
