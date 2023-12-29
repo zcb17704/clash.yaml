@@ -1,10 +1,11 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash
-# 创建时间：2023-12-28 17:40:40
+# 客户端：Clash.Meta
+# 创建时间：2023-12-29 11:50:32
 # 使用模版：ACL4SSR.ini
-# 节点数量：1
-# 节点类型：vmess
+# 节点数量：4
+# 节点类型：vless
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -87,18 +88,64 @@ dns:
 
 proxies:
   - {
-      "name": "|1770459885@qq.com",
-      "type": "vmess",
-      "server": "hk2-speedtest.tools.gcore.com",
+      "name": "高速线路一",
+      "type": "vless",
+      "server": "104.16.0.118",
       "port": 443,
-      "cipher": "auto",
-      "uuid": "90c78f12-8815-4353-e446-983d0767529a",
-      "alterId": 0,
+      "uuid": "78b964ba-f25d-49bf-9bcd-56151130b1bd",
       "tls": true,
-      "skip-cert-verify": true,
-      "servername": "hk2-speedtest.tools.gcore.com",
+      "servername": "www.zcb123.top",
       "network": "ws",
-      "ws-opts": { "path": "/", "headers": { "host": "bulianglin123.com" } },
+      "ws-opts":
+        {
+          "path": "/78b964ba-f25d-49bf-9bcd-56151130b1bd",
+          "headers": { "host": "www.zcb123.top" },
+        },
+    }
+  - {
+      "name": "高速线路二",
+      "type": "vless",
+      "server": "104.17.138.18",
+      "port": 443,
+      "uuid": "78b964ba-f25d-49bf-9bcd-56151130b1bd",
+      "tls": true,
+      "servername": "www.zcb123.top",
+      "network": "ws",
+      "ws-opts":
+        {
+          "path": "/78b964ba-f25d-49bf-9bcd-56151130b1bd",
+          "headers": { "host": "www.zcb123.top" },
+        },
+    }
+  - {
+      "name": "高速线路三",
+      "type": "vless",
+      "server": "172.67.32.79",
+      "port": 443,
+      "uuid": "78b964ba-f25d-49bf-9bcd-56151130b1bd",
+      "tls": true,
+      "servername": "www.zcb123.top",
+      "network": "ws",
+      "ws-opts":
+        {
+          "path": "/78b964ba-f25d-49bf-9bcd-56151130b1bd",
+          "headers": { "host": "www.zcb123.top" },
+        },
+    }
+  - {
+      "name": "低延时线路一",
+      "type": "vless",
+      "server": "104.17.189.146",
+      "port": 443,
+      "uuid": "78b964ba-f25d-49bf-9bcd-56151130b1bd",
+      "tls": true,
+      "servername": "www.zcb123.top",
+      "network": "ws",
+      "ws-opts":
+        {
+          "path": "/78b964ba-f25d-49bf-9bcd-56151130b1bd",
+          "headers": { "host": "www.zcb123.top" },
+        },
     }
 proxy-groups:
   - name: 🚀 节点选择
@@ -106,39 +153,57 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "|1770459885@qq.com"
+      - 高速线路一
+      - 高速线路二
+      - 高速线路三
+      - 低延时线路一
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "|1770459885@qq.com"
+      - 高速线路一
+      - 高速线路二
+      - 高速线路三
+      - 低延时线路一
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "|1770459885@qq.com"
+      - 高速线路一
+      - 高速线路二
+      - 高速线路三
+      - 低延时线路一
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - "|1770459885@qq.com"
+      - 高速线路一
+      - 高速线路二
+      - 高速线路三
+      - 低延时线路一
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - "|1770459885@qq.com"
+      - 高速线路一
+      - 高速线路二
+      - 高速线路三
+      - 低延时线路一
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - "|1770459885@qq.com"
+      - 高速线路一
+      - 高速线路二
+      - 高速线路三
+      - 低延时线路一
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -161,7 +226,10 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "|1770459885@qq.com"
+      - 高速线路一
+      - 高速线路二
+      - 高速线路三
+      - 低延时线路一
 
 rules:
   # 本地/局域网地址
