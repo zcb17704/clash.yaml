@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2023-12-29 17:06:29
+# 创建时间：2024-01-12 14:37:42
 # 使用模版：ACL4SSR_Online.ini
-# 节点数量：4
+# 节点数量：5
 # 节点类型：vless
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
@@ -133,6 +133,21 @@ proxies:
         },
     }
   - {
+      "name": "高速线路四",
+      "type": "vless",
+      "server": "104.17.190.76",
+      "port": 443,
+      "uuid": "78b964ba-f25d-49bf-9bcd-56151130b1bd",
+      "tls": true,
+      "servername": "www.zcb123.top",
+      "network": "ws",
+      "ws-opts":
+        {
+          "path": "/78b964ba-f25d-49bf-9bcd-56151130b1bd",
+          "headers": { "host": "www.zcb123.top" },
+        },
+    }
+  - {
       "name": "低延时线路一",
       "type": "vless",
       "server": "104.17.189.146",
@@ -156,6 +171,7 @@ proxy-groups:
       - 高速线路一
       - 高速线路二
       - 高速线路三
+      - 高速线路四
       - 低延时线路一
   - name: ♻️ 自动选择
     type: url-test
@@ -166,6 +182,7 @@ proxy-groups:
       - 高速线路一
       - 高速线路二
       - 高速线路三
+      - 高速线路四
       - 低延时线路一
   - name: 🌍 国外媒体
     type: select
@@ -176,6 +193,7 @@ proxy-groups:
       - 高速线路一
       - 高速线路二
       - 高速线路三
+      - 高速线路四
       - 低延时线路一
   - name: 📲 电报信息
     type: select
@@ -185,6 +203,7 @@ proxy-groups:
       - 高速线路一
       - 高速线路二
       - 高速线路三
+      - 高速线路四
       - 低延时线路一
   - name: Ⓜ️ 微软服务
     type: select
@@ -194,6 +213,7 @@ proxy-groups:
       - 高速线路一
       - 高速线路二
       - 高速线路三
+      - 高速线路四
       - 低延时线路一
   - name: 🍎 苹果服务
     type: select
@@ -203,6 +223,7 @@ proxy-groups:
       - 高速线路一
       - 高速线路二
       - 高速线路三
+      - 高速线路四
       - 低延时线路一
   - name: 📢 谷歌FCM
     type: select
@@ -213,6 +234,7 @@ proxy-groups:
       - 高速线路一
       - 高速线路二
       - 高速线路三
+      - 高速线路四
       - 低延时线路一
   - name: 🎯 全球直连
     type: select
@@ -239,6 +261,7 @@ proxy-groups:
       - 高速线路一
       - 高速线路二
       - 高速线路三
+      - 高速线路四
       - 低延时线路一
 
 rules:
