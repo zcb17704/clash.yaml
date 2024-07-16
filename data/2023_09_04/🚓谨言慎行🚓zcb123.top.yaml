@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-01-12 14:37:42
+# 创建时间：2024-07-16 17:06:01
 # 使用模版：ACL4SSR_Online.ini
-# 节点数量：5
+# 节点数量：4
 # 节点类型：vless
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
@@ -88,9 +88,9 @@ dns:
 
 proxies:
   - {
-      "name": "高速线路一",
+      "name": "联通线路1",
       "type": "vless",
-      "server": "104.16.0.118",
+      "server": "104.29.68.23",
       "port": 443,
       "uuid": "78b964ba-f25d-49bf-9bcd-56151130b1bd",
       "tls": true,
@@ -103,9 +103,9 @@ proxies:
         },
     }
   - {
-      "name": "高速线路二",
+      "name": "联通线路2",
       "type": "vless",
-      "server": "104.17.138.18",
+      "server": "162.159.140.138",
       "port": 443,
       "uuid": "78b964ba-f25d-49bf-9bcd-56151130b1bd",
       "tls": true,
@@ -118,9 +118,9 @@ proxies:
         },
     }
   - {
-      "name": "高速线路三",
+      "name": "移动线路1（优质线路）",
       "type": "vless",
-      "server": "172.67.32.79",
+      "server": "104.18.74.220",
       "port": 443,
       "uuid": "78b964ba-f25d-49bf-9bcd-56151130b1bd",
       "tls": true,
@@ -133,24 +133,9 @@ proxies:
         },
     }
   - {
-      "name": "高速线路四",
+      "name": "移动线路2",
       "type": "vless",
-      "server": "104.17.190.76",
-      "port": 443,
-      "uuid": "78b964ba-f25d-49bf-9bcd-56151130b1bd",
-      "tls": true,
-      "servername": "www.zcb123.top",
-      "network": "ws",
-      "ws-opts":
-        {
-          "path": "/78b964ba-f25d-49bf-9bcd-56151130b1bd",
-          "headers": { "host": "www.zcb123.top" },
-        },
-    }
-  - {
-      "name": "低延时线路一",
-      "type": "vless",
-      "server": "104.17.189.146",
+      "server": "104.24.29.94",
       "port": 443,
       "uuid": "78b964ba-f25d-49bf-9bcd-56151130b1bd",
       "tls": true,
@@ -168,74 +153,67 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 高速线路一
-      - 高速线路二
-      - 高速线路三
-      - 高速线路四
-      - 低延时线路一
+      - 联通线路1
+      - 联通线路2
+      - 移动线路1（优质线路）
+      - 移动线路2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 高速线路一
-      - 高速线路二
-      - 高速线路三
-      - 高速线路四
-      - 低延时线路一
+      - 联通线路1
+      - 联通线路2
+      - 移动线路1（优质线路）
+      - 移动线路2
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 高速线路一
-      - 高速线路二
-      - 高速线路三
-      - 高速线路四
-      - 低延时线路一
+      - 联通线路1
+      - 联通线路2
+      - 移动线路1（优质线路）
+      - 移动线路2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 高速线路一
-      - 高速线路二
-      - 高速线路三
-      - 高速线路四
-      - 低延时线路一
+      - 联通线路1
+      - 联通线路2
+      - 移动线路1（优质线路）
+      - 移动线路2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 高速线路一
-      - 高速线路二
-      - 高速线路三
-      - 高速线路四
-      - 低延时线路一
+      - 联通线路1
+      - 联通线路2
+      - 移动线路1（优质线路）
+      - 移动线路2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 高速线路一
-      - 高速线路二
-      - 高速线路三
-      - 高速线路四
-      - 低延时线路一
+      - 联通线路1
+      - 联通线路2
+      - 移动线路1（优质线路）
+      - 移动线路2
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 高速线路一
-      - 高速线路二
-      - 高速线路三
-      - 高速线路四
-      - 低延时线路一
+      - 联通线路1
+      - 联通线路2
+      - 移动线路1（优质线路）
+      - 移动线路2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -258,11 +236,10 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 高速线路一
-      - 高速线路二
-      - 高速线路三
-      - 高速线路四
-      - 低延时线路一
+      - 联通线路1
+      - 联通线路2
+      - 移动线路1（优质线路）
+      - 移动线路2
 
 rules:
   # 本地/局域网地址
@@ -2231,8 +2208,8 @@ rules:
   - IP-CIDR6,2001:b28:f23d::/48,📲 电报信息,no-resolve
   - IP-CIDR6,2001:b28:f23f::/48,📲 电报信息,no-resolve
   # 内容：国外媒体列表
-  # 更新：2023-12-14 21:59:10
-  # 数量：369条
+  # 更新：2024-06-30 11:02:56
+  # 数量：367条
   # ABC
   # AbemaTV
   # All4
@@ -2283,13 +2260,10 @@ rules:
   - DOMAIN-SUFFIX,go.com,🌍 国外媒体
   #   - USER-AGENT,AbemaTV*,🌍 国外媒体
   - DOMAIN-KEYWORD,abematv.akamaized.net,🌍 国外媒体
-  - DOMAIN,api-abematv.bucketeer.jp,🌍 国外媒体
-  - DOMAIN-SUFFIX,abema-tv.com,🌍 国外媒体
   - DOMAIN-SUFFIX,abema.io,🌍 国外媒体
   - DOMAIN-SUFFIX,abema.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,ameba.jp,🌍 国外媒体
   - DOMAIN-SUFFIX,hayabusa.io,🌍 国外媒体
-  - DOMAIN-SUFFIX,hayabusa.media,🌍 国外媒体
   #   - USER-AGENT,All4*,🌍 国外媒体
   - DOMAIN-SUFFIX,c4assets.com,🌍 国外媒体
   - DOMAIN-SUFFIX,channel4.com,🌍 国外媒体
@@ -2401,7 +2375,6 @@ rules:
   - DOMAIN-SUFFIX,hbomaxcdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbonow.com,🌍 国外媒体
   #   - USER-AGENT,HBO%20GO%20PROD*,🌍 国外媒体
-  - DOMAIN-KEYWORD,.hbogoasia.,🌍 国外媒体
   - DOMAIN-KEYWORD,hbogoasia,🌍 国外媒体
   - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,🌍 国外媒体
   - DOMAIN,bcbolthboa-a.akamaihd.net,🌍 国外媒体
@@ -2549,8 +2522,10 @@ rules:
   - DOMAIN-SUFFIX,olevod.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,olevodtv.com,🌍 国外媒体
   - DOMAIN-KEYWORD,openai,🌍 国外媒体
+  - DOMAIN,gemini.google.com,🌍 国外媒体
   - DOMAIN-SUFFIX,auth0.com,🌍 国外媒体
   - DOMAIN-SUFFIX,challenges.cloudflare.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,chatgpt.com,🌍 国外媒体
   - DOMAIN-SUFFIX,client-api.arkoselabs.com,🌍 国外媒体
   - DOMAIN-SUFFIX,events.statsigapi.net,🌍 国外媒体
   - DOMAIN-SUFFIX,featuregates.org,🌍 国外媒体
@@ -2870,6 +2845,7 @@ rules:
   - DOMAIN-SUFFIX,anthropic.com,🚀 节点选择
   - DOMAIN-SUFFIX,apache.org,🚀 节点选择
   - DOMAIN-SUFFIX,docker.com,🚀 节点选择
+  - DOMAIN-SUFFIX,docker.io,🚀 节点选择
   - DOMAIN-SUFFIX,elastic.co,🚀 节点选择
   - DOMAIN-SUFFIX,elastic.com,🚀 节点选择
   - DOMAIN-SUFFIX,gcr.io,🚀 节点选择
@@ -3260,6 +3236,8 @@ rules:
   - DOMAIN-SUFFIX,biliapi.com,🎯 全球直连
   - DOMAIN-SUFFIX,biliapi.net,🎯 全球直连
   - DOMAIN-SUFFIX,bilibili.com,🎯 全球直连
+  - DOMAIN-SUFFIX,bilibili.co,🎯 全球直连
+  - DOMAIN-SUFFIX,biliintl.co,🎯 全球直连
   - DOMAIN-SUFFIX,biligame.com,🎯 全球直连
   - DOMAIN-SUFFIX,biligame.net,🎯 全球直连
   - DOMAIN-SUFFIX,bilivideo.com,🎯 全球直连
